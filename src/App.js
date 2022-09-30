@@ -1,11 +1,13 @@
 import React from "react";
 import SignUpPage from "./components/SignUpPage";
+import SignInPage from "./components/SignInPage";
 
 function App() {
   return (
-    <>
-      <SignUpPage className="w-screen" />
-    </>
+    <div className="w-screen">
+      {/* <SignUpPage /> */}
+      <SignInPage />
+    </div>
   );
 }
 
