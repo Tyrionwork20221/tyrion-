@@ -7,6 +7,7 @@ import security from "../assets/Security.png";
 import fast from "../assets/Fast.png";
 import radio from "../assets/Frame 46.png";
 import radio2 from "../assets/Frame 46a.png";
+import image2 from "../assets/Group 2.png";
 
 function landingPage() {
   return (
@@ -149,6 +150,107 @@ function landingPage() {
         </div>
         <img src={tyrion4} alt="" />
       </div>
+      <button className="flex items-center pl-10 bg-[#FBC108] mx-auto w-44 h-16  text-white rounded-lg font-medium text-lg">
+        Trade now
+      </button>
+
+      {/* section 3 */}
+      <div className="mt-32 mb-60 ">
+        <video controls className="w-944 h-455 bg-[#FFFBEE] ml-64">
+          <source src="" />
+        </video>
+      </div>
+
+      {/* section 4 */}
+      <div className="relative mb-16">
+        <img src={image2} alt="" />
+        <div className="flex flex-col absolute top-28 left-600">
+          <h1 className="font-bold text-6xl">
+            Want to rep a<br />
+            <span className="text-[#FBC108]">reputable</span> brand?
+          </h1>
+          <p className="mt-6 text-xl font-bold mb-14">
+            Our Tyrion branded merches are available for
+            <br /> sale at affordable prices.
+          </p>
+          <button className="w-44 h-16 bg-black rounded-lg text-white">
+            Shop now
+          </button>
+        </div>
+      </div>
+
+      {/* section 5 */}
+      <div className="mx-52">
+        <h1 className="font-bold text-4xl mb-3.5">
+          Subscribe to our newsletter
+        </h1>
+        <p className="text-base font-medium">
+          Want to stay ahead of crypto news and our exciting
+          <br /> new updates?
+        </p>
+        <form className="flex gap-9 mt-7 mb-16 ">
+          <input
+            type="text"
+            placeholder="Name"
+            className="border border-2px border-gray-300 rounded-lg w-410 h-16 pl-3"
+          />
+
+          <input
+            type="email"
+            placeholder="Email address"
+            className="border border-2px border-gray-300 rounded-lg w-410 h-16 pl-3"
+          />
+
+          <button
+            type="submit"
+            className="w-44 h-16 bg-[#FBC108] rounded-lg text-white"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      {/* footer */}
+
+      <footer className="bg-black text-white pt-32 pb-12 flex flex-col">
+        <div className="flex gap-32 pl-40 ">
+          <div className="flex flex-col gap-6">
+            <h4 className="font-bold text-xl">Business</h4>
+            <h6 className="font-base">About us</h6>
+            <h6 className="font-base">Exchange</h6>
+            <h6 className="font-base">Rates</h6>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h4 className="font-bold text-xl">Legal</h4>
+            <h6 className="font-base">Term of use</h6>
+            <h6 className="font-base">Privacy policy</h6>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h4 className="font-bold text-xl">Product</h4>
+            <h6 className="font-base">Exchange</h6>
+            <h6 className="font-base">Cryptocurrency</h6>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h4 className="font-bold text-xl">Support</h4>
+            <h6 className="font-base">Live chat</h6>
+            <h6 className="font-base">Help center</h6>
+            <h6 className="font-base">Give feedback</h6>
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h4 className="font-bold text-xl">Contact</h4>
+            <h6 className="font-base">+234 905 678 4456</h6>
+            <h6 className="font-base">hello@tyrionexchange</h6>
+            <h6 className="font-base">Tyrionexchange</h6>
+          </div>
+        </div>
+        <p className="mt-20 self-center">
+          © 2021 — Tyrionexchange - All Rights Reserved
+        </p>
+      </footer>
     </div>
   );
 }
