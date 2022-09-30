@@ -6,9 +6,9 @@ import LandingPage from "./components/LandingPage";
 function App() {
   return (
     <div className="w-screen">
-      <SignUpPage />
+      {/* <SignUpPage /> */}
       {/* <SignInPage /> */}
-      {/* <LandingPage /> */}
+      <LandingPage />
     </div>
   );
 }
