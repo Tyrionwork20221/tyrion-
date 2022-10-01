@@ -11,10 +11,10 @@ function App() {
     <div className="w-screen">
       {/* <SignUpPage /> */}
       {/* <SignInPage /> */}
-      {/* <LandingPage /> */}
+      <LandingPage />
       {/* <AboutUsPage /> */}
       {/* <Rates /> */}
-      <ShopNowPage />
+      {/* <ShopNowPage /> */}
     </div>
   );
 }

@@ -20,7 +20,7 @@ function signUpPage() {
           <form>
             <label className="font-medium text-lg">Username</label>
             <div className=" relative flex mb-10">
-              <img src={icon1} alt="" className="w-3 absolute bottom-4 ml-4" />
+              <img src={icon1} alt="" className="w-3 absolute bottom-6 ml-4" />
               <input
                 for="username"
                 type="text"
@@ -32,7 +32,7 @@ function signUpPage() {
 
             <label className="font-medium text-lg">Email</label>
             <div className="relative flex mb-10">
-              <img src={icon2} alt="" className="w-3 absolute bottom-4 ml-4" />
+              <img src={icon2} alt="" className="w-3 absolute bottom-6 ml-4" />
               <input
                 for="username"
                 type="email"
@@ -44,7 +44,7 @@ function signUpPage() {
 
             <label className="font-medium text-lg">Phone number</label>
             <div className="relative flex mb-10 ">
-              <img src={icon3} alt="" className="w-3 absolute bottom-4 ml-4" />
+              <img src={icon3} alt="" className="w-3 absolute bottom-6 ml-4" />
               <input
                 for="tel"
                 type="tel"
@@ -56,7 +56,7 @@ function signUpPage() {
 
             <label className="font-medium text-lg">Password</label>
             <div className="relative flex mb-10 mb-10 ">
-              <img src={icon4} alt="" className="w-3 absolute bottom-4 ml-4" />
+              <img src={icon4} alt="" className="w-3 absolute bottom-6 ml-4" />
               <input
                 for="password"
                 type="password"
@@ -68,7 +68,7 @@ function signUpPage() {
 
             <label className="font-medium text-lg">Repeat password</label>
             <div className="relative flex mb-10 ">
-              <img src={icon4} alt="" className="w-3 absolute bottom-4 ml-4" />
+              <img src={icon4} alt="" className="w-3 absolute bottom-6 ml-4" />
               <input
                 for="password"
                 type="password"
@@ -78,7 +78,7 @@ function signUpPage() {
               />
             </div>
 
-            <button className="w-558 h-16 bg-[#FBC108] text-white mb-5 rounded-lg font-medium text-lg">
+            <button className="w-558 h-16 bg-[#FBC108] text-white mb-5 rounded-lg font-medium text-lg cursor-pointer hover:bg-[#FFCC00]">
               Create an account
             </button>
           </form>

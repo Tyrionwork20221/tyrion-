@@ -2,12 +2,16 @@ import React from "react";
 import logo2 from "../assets/logo2.png";
 import tyrion3 from "../assets/Tyrion 3a.png";
 import tyrion4 from "../assets/Tyrion 4.png";
+import coins1 from "../assets/Coins 1.png";
 import reliable from "../assets/Reliable.png";
 import security from "../assets/Security.png";
 import fast from "../assets/Fast.png";
 import radio from "../assets/Frame 46.png";
 import radio2 from "../assets/Frame 46a.png";
 import image2 from "../assets/Group 2.png";
+import ellipse from "../assets/Ellipse 3.png";
+import polygon from "../assets/Polygon 1.png";
+import vector1 from "../assets/Vector 1.png";
 
 function landingPage() {
   return (
@@ -18,13 +22,23 @@ function landingPage() {
         <div className="mx-90 flex items-center  justify-between">
           <img src={logo2} alt="" className="w-32 h-14" />
           <div className="flex items-center text-white font-medium text-base  gap-14">
-            <h6>Home</h6>
-            <h6>About us</h6>
-            <h6>Rates</h6>
-            <h6>FAQs</h6>
-            <h6>Contact</h6>
+            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Home
+            </h6>
+            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              About us
+            </h6>
+            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Rates
+            </h6>
+            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              FAQs
+            </h6>
+            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Contact
+            </h6>
           </div>
-          <button className="bg-[#FBC108]  w-40 h-16 text-white rounded-lg font-medium text-lg">
+          <button className="bg-[#FBC108]  w-40 h-16 text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#FFCC00]">
             Dashboard
           </button>
         </div>
@@ -42,16 +56,20 @@ function landingPage() {
               For Naira Securely In Lesser Time
             </h4>
             <div className="flex gap-4">
-              <button className="bg-[#FBC108] w-44 h-16  text-white rounded-lg font-medium text-lg">
+              <button className="bg-[#FBC108] w-44 h-16  text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#FFCC00]">
                 Start Trading
               </button>
-              <button className="border-solid border-2 border-red-500  w-44 h-16  text-white rounded-lg font-medium text-lg">
+              <button className="border-solid border-2 border-red-500  w-44 h-16  text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#fbc108] hover:text-white hover:border-none">
                 Check Rates
               </button>
             </div>
           </div>
-          <img src={tyrion3} alt="" />
+          <img src={tyrion3} alt="" className="relative z-10" />
         </div>
+        <img src={coins1} alt="" className="absolute top-530 left-890 z-0" />
+        <img src={ellipse} alt="" className="absolute top-80 left-1380 z-0" />
+        <img src={polygon} alt="" className="absolute top-700 left-580 z-0" />
+        <img src={vector1} alt="" className="absolute top-410 left-56 z-0" />
       </div>
 
       {/* section 2 */}
@@ -103,6 +121,7 @@ function landingPage() {
       <h1 className="mt-24 font-bold text-center text-6xl">
         Trade in 5 simple steps
       </h1>
+      <img src={vector1} alt="" className="relative left-580 -top-2 z-0" />
 
       <div className="flex gap-32 ml-36 mt-44">
         <div>

@@ -9,9 +9,15 @@ function shopNowPage() {
       <div className="ml-40 mr-10 flex items-center  mt-12 mb-36">
         <img src={logo3} alt="" className="w-32 h-14 mr-16" />
         <div className="flex items-center  font-medium text-base  gap-20">
-          <h6>Home</h6>
-          <h6>Cart</h6>
-          <h6>Connect wallet</h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            Home
+          </h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            Cart
+          </h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            Connect wallet
+          </h6>
         </div>
       </div>
 

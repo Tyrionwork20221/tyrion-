@@ -10,17 +10,27 @@ function aboutUsPage() {
       <div className="ml-20 flex items-center justify-between mt-12">
         <img src={logo3} alt="" className="w-32 h-14" />
         <div className="flex items-center  font-medium text-base  gap-14">
-          <h6>Home</h6>
-          <h6>About us</h6>
-          <h6>Rates</h6>
-          <h6>FAQs</h6>
-          <h6>Contact</h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            Home
+          </h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            About us
+          </h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            Rates
+          </h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            FAQs
+          </h6>
+          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+            Contact
+          </h6>
         </div>
         <div>
-          <button className="border-solid border-2 border-[#FBC108] mr-7  w-40 h-16 rounded-lg font-medium text-lg">
+          <button className="border-solid border-2 border-[#FBC108] mr-7  w-40 h-16 rounded-lg font-medium text-lg cursor-pointer hover:bg-[#fbc108] hover:text-white">
             Sign in
           </button>
-          <button className="bg-[#FBC108]  w-52 h-16 text-white rounded-lg font-medium text-lg px-4">
+          <button className="bg-[#FBC108]  w-52 h-16 text-white rounded-lg font-medium text-lg px-4 cursor-pointer hover:bg-[#FFCC00]">
             Create an account
           </button>
         </div>
