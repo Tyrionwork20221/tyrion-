@@ -7,7 +7,7 @@ function aboutUsPage() {
   return (
     <div>
       {/* header */}
-      <div className="mx-90 flex items-center  justify-between mt-12">
+      <div className="ml-20 flex items-center justify-between mt-12">
         <img src={logo3} alt="" className="w-32 h-14" />
         <div className="flex items-center  font-medium text-base  gap-14">
           <h6>Home</h6>
@@ -20,8 +20,8 @@ function aboutUsPage() {
           <button className="border-solid border-2 border-[#FBC108] mr-7  w-40 h-16 rounded-lg font-medium text-lg">
             Sign in
           </button>
-          <button className="bg-[#FBC108]  w-40 h-16 text-white rounded-lg font-medium text-lg">
-            Dashboard
+          <button className="bg-[#FBC108]  w-52 h-16 text-white rounded-lg font-medium text-lg px-4">
+            Create an account
           </button>
         </div>
       </div>

@@ -3,6 +3,8 @@ import SignUpPage from "./components/SignUpPage";
 import SignInPage from "./components/SignInPage";
 import LandingPage from "./components/LandingPage";
 import AboutUsPage from "./components/AboutUsPage";
+import Rates from "./components/RatesPage";
+import ShopNowPage from "./components/ShopNowPage";
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       {/* <SignUpPage /> */}
       {/* <SignInPage /> */}
       {/* <LandingPage /> */}
-      <AboutUsPage />
+      {/* <AboutUsPage /> */}
+      {/* <Rates /> */}
+      <ShopNowPage />
     </div>
   );
 }
