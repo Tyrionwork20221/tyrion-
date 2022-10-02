@@ -270,28 +270,51 @@ function landingPage() {
         <div className="flex gap-32 pl-40 ">
           <div className="flex flex-col gap-6">
             <h4 className="font-bold text-xl">Business</h4>
-            <h6 className="font-base">About us</h6>
-            <h6 className="font-base">Exchange</h6>
-            <h6 className="font-base">Rates</h6>
+            <h6
+              className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]
+              "
+            >
+              About us
+            </h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Exchange
+            </h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108] ">
+              Rates
+            </h6>
           </div>
 
           <div className="flex flex-col gap-6">
             <h4 className="font-bold text-xl">Legal</h4>
-            <h6 className="font-base">Term of use</h6>
-            <h6 className="font-base">Privacy policy</h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Term of use
+            </h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Privacy policy
+            </h6>
           </div>
 
           <div className="flex flex-col gap-6">
             <h4 className="font-bold text-xl">Product</h4>
-            <h6 className="font-base">Exchange</h6>
-            <h6 className="font-base">Cryptocurrency</h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Exchange
+            </h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Cryptocurrency
+            </h6>
           </div>
 
           <div className="flex flex-col gap-6">
             <h4 className="font-bold text-xl">Support</h4>
-            <h6 className="font-base">Live chat</h6>
-            <h6 className="font-base">Help center</h6>
-            <h6 className="font-base">Give feedback</h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Live chat
+            </h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Help center
+            </h6>
+            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+              Give feedback
+            </h6>
           </div>
 
           <div className="flex flex-col gap-6">
