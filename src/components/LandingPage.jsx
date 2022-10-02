@@ -16,12 +16,12 @@ import hamburger from "../assets/hamburger.png";
 
 function landingPage() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-hidden">
       {/* section 1 */}
-      <div className="bg-gradient-to-br from-[#e2cc06]  via-black  to-gray-300   pt-12">
+      <div className="bg-gradient-to-br from-[#e2cc06]  via-black  to-gray-300 pt-12 md:relative">
         {/* header */}
         <div className="md:mx-90 mx-9 flex items-center justify-between">
-          <img src={logo2} alt="" className="w-32 h-14" />
+          <img src={logo2} alt="" className="md:w-32 md:h-14" />
           <div className="md:flex items-center text-white font-medium text-base  gap-14 hidden">
             <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108] ">
               Home
@@ -141,14 +141,17 @@ function landingPage() {
         cards
         <br /> and digital assets with a network of foreign and local clientele.{" "}
       </p>
-      <h1 className="md:mt-24 mt-11 text-2xl font-bold text-center md:text-6xl">
-        Trade in 5 simple steps
-      </h1>
-      <img
-        src={vector1}
-        alt=""
-        className="md:relative md:left-580 md:-top-2 md:z-0 hidden md:block"
-      />
+
+      <div>
+        <h1 className="md:mt-24 mt-11 text-2xl font-bold text-center md:text-6xl">
+          Trade in 5 simple steps
+        </h1>
+        <img
+          src={vector1}
+          alt=""
+          className="md:relative md:left-580 md:-top-2 md:z-0 hidden md:block"
+        />
+      </div>
 
       <div className="md:flex md:gap-32 md:ml-36 md:mt-44 mt-9 ml-10">
         <div>
@@ -204,13 +207,13 @@ function landingPage() {
         </div>
         <img src={tyrion4} alt="" className=" mt-10 mx-auto " />
       </div>
-      <button className="flex items-center text-center bg-[#FBC108] mx-auto w-44  md:h-16 h-9 pl-14 mt-9 py-2  text-white rounded-lg font-medium text-sm md:text-lg">
+      <button className="flex items-center text-center bg-[#FBC108] mx-auto w-44  md:h-16 h-9 md:pl-11 pl-14 mt-9 py-2  text-white rounded-lg font-medium text-sm md:text-lg cursor-pointer hover:bg-[#FFCC00]">
         Trade now
       </button>
 
       {/* section 3 */}
-      <div className="mt-10 md:mt-32 md:mb-60 md:w-944 w-72 md:h-455 h-36 bg-[#FFFBEE] mx-auto ">
-        <video controls>
+      <div className="mt-10 md:mt-32 md:mb-60  bg-[#FFFBEE]  ">
+        <video controls className="md:w-944 w-72 md:h-455 h-36 mx-auto">
           <source src="" />
         </video>
       </div>
@@ -227,7 +230,7 @@ function landingPage() {
             Our Tyrion branded merches are available for
             <br /> sale at affordable prices.
           </p>
-          <button className="md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  mt-6  bg-black rounded-lg text-white">
+          <button className="md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  mt-6  bg-black rounded-lg text-white cursor-pointer hover:bg-[#FFCC00]">
             Shop now
           </button>
         </div>
@@ -257,7 +260,7 @@ function landingPage() {
 
           <button
             type="submit"
-            className="w-44 h-16 bg-[#FBC108] rounded-lg text-white"
+            className="w-44 h-16 bg-[#FBC108] rounded-lg text-white cursor-pointer hover:bg-[#FFCC00]"
           >
             Subscribe
           </button>
