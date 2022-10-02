@@ -12,17 +12,18 @@ import image2 from "../assets/Group 2.png";
 import ellipse from "../assets/Ellipse 3.png";
 import polygon from "../assets/Polygon 1.png";
 import vector1 from "../assets/Vector 1.png";
+import hamburger from "../assets/hamburger.png";
 
 function landingPage() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* section 1 */}
-      <div className="bg-gradient-to-br from-orange-400 to-gray-300 pt-12">
+      <div className="bg-gradient-to-br from-[#e2cc06]  via-black  to-gray-300   pt-12">
         {/* header */}
-        <div className="mx-90 flex items-center  justify-between">
+        <div className="md:mx-90 mx-9 flex items-center justify-between">
           <img src={logo2} alt="" className="w-32 h-14" />
-          <div className="flex items-center text-white font-medium text-base  gap-14">
-            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
+          <div className="md:flex items-center text-white font-medium text-base  gap-14 hidden">
+            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108] ">
               Home
             </h6>
             <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
@@ -38,43 +39,65 @@ function landingPage() {
               Contact
             </h6>
           </div>
-          <button className="bg-[#FBC108]  w-40 h-16 text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#FFCC00]">
+          <button className="bg-[#FBC108]  w-40 h-16 text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#FFCC00] hidden md:block">
             Dashboard
           </button>
+          {/* hamburger for mobile view */}
+          <img src={hamburger} alt="" className="md:hidden w-5 h-3" />
+          {/* end */}
         </div>
+        {/* header ends */}
 
         {/* hero */}
 
-        <div className="ml-90 flex justify-between mt-20 ">
+        <div className="md:ml-90 justify-between md:mt-20 mt-6 md:flex ml-9">
           <div>
-            <h1 className="font-bold text-7xl mt-20 text-white">
+            <h1 className="font-bold md:text-7xl text-5xl md:mt-20 mt-6 text-white">
               Swap Your <br />
               Gift Cards & <br />
               Digital Assets{" "}
             </h1>
-            <h4 className="text-white mt-2 font-medium text-2xl mb-90">
+            <h4 className="text-white mt-2 font-medium text-sm md:text-2xl md:mb-90 mb-5">
               For Naira Securely In Lesser Time
             </h4>
-            <div className="flex gap-4">
-              <button className="bg-[#FBC108] w-44 h-16  text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#FFCC00]">
+            <div className="flex gap-4 mb-10">
+              <button className="bg-[#FBC108] md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  text-white rounded-lg font-medium md:text-lg cursor-pointer hover:bg-[#FFCC00]">
                 Start Trading
               </button>
-              <button className="border-solid border-2 border-red-500  w-44 h-16  text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#fbc108] hover:text-white hover:border-none">
+              <button className="border-solid border-2 border-red-500  md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  text-white rounded-lg font-medium md:text-lg cursor-pointer hover:bg-[#fbc108] hover:text-white hover:border-none">
                 Check Rates
               </button>
             </div>
           </div>
           <img src={tyrion3} alt="" className="relative z-10" />
         </div>
-        <img src={coins1} alt="" className="absolute top-530 left-890 z-0" />
-        <img src={ellipse} alt="" className="absolute top-80 left-1380 z-0" />
-        <img src={polygon} alt="" className="absolute top-700 left-580 z-0" />
-        <img src={vector1} alt="" className="absolute top-410 left-56 z-0" />
+        <img
+          src={coins1}
+          alt=""
+          className="md:absolute top-530 left-890 z-0 hidden md:block"
+        />
+        <img
+          src={ellipse}
+          alt=""
+          className="md:absolute top-80 left-1380 z-0 hidden md:block"
+        />
+        <img
+          src={polygon}
+          alt=""
+          className="md:absolute top-700 left-580 z-0 hidden md:block"
+        />
+        <img
+          src={vector1}
+          alt=""
+          className="md:absolute top-410 left-56 z-0 hidden md:block"
+        />
       </div>
 
+      {/* hero section */}
+
       {/* section 2 */}
-      <div className="flex justify-center gap-36 mx-4 mt-20">
-        <div className="flex flex-col items-center">
+      <div className="md:flex md:justify-center gap-36 mx-4 mt-20">
+        <div className="flex flex-col items-center mb-16">
           <img src={security} alt="" className="w-24 mb-6 " />
           <h3 className="font-medium text-center text-2xl mb-6">Secure</h3>
           <p className="font-base text-[#00000066] text-center">
@@ -84,7 +107,7 @@ function landingPage() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-16">
           <img src={reliable} alt="" className="w-24 mb-8" />
           <h3 className="font-medium text-center text-2xl mb-6">Reliable</h3>
           <p className="font-base text-[#00000066] text-center">
@@ -94,7 +117,7 @@ function landingPage() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mb-11">
           <img src={fast} alt="" className="w-24 mb-6" />
           <h3 className="font-medium text-center text-2xl mb-6">Swift</h3>
           <p className="font-base text-[#00000066] text-center">
@@ -107,31 +130,35 @@ function landingPage() {
       </div>
 
       {/* subsection */}
-      <h1 className="font-bold text-center mt-20 text-6xl">
+      <h1 className=" text-3xl font-bold text-center mt-20 md:text-6xl">
         Trust is our only
         <br />
         <span className="text-[#FBC108]">currency</span>
       </h1>
-      <p className="mt-9 text-center text-3xl">
+      <p className="text-base mt-4 md:mt-9 text-[#00000066] text-center md:text-3xl mx-8 md:mx-auto">
         We are 3 years experienced Nigerian registered and established
         <br /> exchange that provides local currency for an equal value of gift
         cards
         <br /> and digital assets with a network of foreign and local clientele.{" "}
       </p>
-      <h1 className="mt-24 font-bold text-center text-6xl">
+      <h1 className="md:mt-24 mt-11 text-2xl font-bold text-center md:text-6xl">
         Trade in 5 simple steps
       </h1>
-      <img src={vector1} alt="" className="relative left-580 -top-2 z-0" />
+      <img
+        src={vector1}
+        alt=""
+        className="md:relative md:left-580 md:-top-2 md:z-0 hidden md:block"
+      />
 
-      <div className="flex gap-32 ml-36 mt-44">
+      <div className="md:flex md:gap-32 md:ml-36 md:mt-44 mt-9 ml-10">
         <div>
           <div className="flex items-center gap-12">
-            <img src={radio} alt="" className="self-start" />
+            <img src={radio} alt="" className="self-start w-5 md:w-11" />
             <div>
-              <h1 className="font-lg font-bold text-3xl">
+              <h1 className="font-lg font-bold md:text-3xl text-base">
                 Create/Verify your account
               </h1>
-              <p className="mt-8 text-2xl text-[#00000063]">
+              <p className="md:mt-8 mt-5 md:text-2xl text-[#00000063] mr-12">
                 We are known for our unique expertise in gift card exchange to
                 naira. We have been in existence since 2017 trading gift cards
                 and cryptocurrencies offering amazing services to customers in
@@ -140,66 +167,74 @@ function landingPage() {
             </div>
           </div>
           <div className="flex items-center gap-12 mt-12">
-            <img src={radio2} alt="" className="self-start" />
+            <img src={radio2} alt="" className="self-start  w-5 md:w-11" />
             <div>
-              <h1 className="font-lg font-bold text-3xl">Link your bank</h1>
+              <h1 className="font-lg font-bold md:text-3xl text-base">
+                Link your bank
+              </h1>
             </div>
           </div>
 
           <div className="flex items-center gap-12 mt-12">
-            <img src={radio2} alt="" className="self-start" />
+            <img src={radio2} alt="" className="self-start w-5 md:w-11" />
             <div>
-              <h1 className="font-lg font-bold text-3xl">Check for rates</h1>
+              <h1 className="font-lg font-bold md:text-3xl text-base">
+                Check for rates
+              </h1>
             </div>
           </div>
 
           <div className="flex items-center gap-12 mt-12">
-            <img src={radio2} alt="" className="self-start" />
+            <img src={radio2} alt="" className="self-start w-5 md:w-11" />
             <div>
-              <h1 className="font-lg font-bold text-3xl">Place your trade</h1>
+              <h1 className="font-lg font-bold md:text-3xl text-base">
+                Place your trade
+              </h1>
             </div>
           </div>
 
           <div className="flex items-center gap-12 mt-12">
-            <img src={radio2} alt="" className="self-start" />
+            <img src={radio2} alt="" className="self-start w-5 md:w-11" />
             <div>
-              <h1 className="font-lg font-bold text-3xl">Get alert</h1>
+              <h1 className="font-lg font-bold md:text-3xl text-base">
+                Get alert
+              </h1>
             </div>
           </div>
         </div>
-        <img src={tyrion4} alt="" />
+        <img src={tyrion4} alt="" className=" mt-10 mx-auto " />
       </div>
-      <button className="flex items-center pl-10 bg-[#FBC108] mx-auto w-44 h-16  text-white rounded-lg font-medium text-lg">
+      <button className="flex items-center text-center bg-[#FBC108] mx-auto w-44  md:h-16 h-9 pl-14 mt-9 py-2  text-white rounded-lg font-medium text-sm md:text-lg">
         Trade now
       </button>
 
       {/* section 3 */}
-      <div className="mt-32 mb-60 ">
-        <video controls className="w-944 h-455 bg-[#FFFBEE] ml-64">
+      <div className="mt-10 md:mt-32 md:mb-60 md:w-944 w-72 md:h-455 h-36 bg-[#FFFBEE] mx-auto ">
+        <video controls>
           <source src="" />
         </video>
       </div>
 
       {/* section 4 */}
-      <div className="relative mb-16">
-        <img src={image2} alt="" />
-        <div className="flex flex-col absolute top-28 left-600">
-          <h1 className="font-bold text-6xl">
+      <div className="md:relative mb-16 mt-16 mx-16 md:mx-auto">
+        <img src={image2} alt="" className="hidden md:block" />
+        <div className="md:absolute md:top-28 md:left-600 mx:auto">
+          <h1 className="font-bold text-3xl md:text-6xl">
             Want to rep a<br />
             <span className="text-[#FBC108]">reputable</span> brand?
           </h1>
-          <p className="mt-6 text-xl font-bold mb-14">
+          <p className="md:mt-6 mt-2.5 md:text-xl font-medium md:mb-14 text-sm">
             Our Tyrion branded merches are available for
             <br /> sale at affordable prices.
           </p>
-          <button className="w-44 h-16 bg-black rounded-lg text-white">
+          <button className="md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  mt-6  bg-black rounded-lg text-white">
             Shop now
           </button>
         </div>
       </div>
 
       {/* section 5 */}
-      <div className="mx-52">
+      <div className="md:mx-52 hidden md:block">
         <h1 className="font-bold text-4xl mb-3.5">
           Subscribe to our newsletter
         </h1>
@@ -231,7 +266,7 @@ function landingPage() {
 
       {/* footer */}
 
-      <footer className="bg-black text-white pt-32 pb-12 flex flex-col">
+      <footer className="hidden md:flex bg-black text-white pt-32 pb-12 flex flex-col">
         <div className="flex gap-32 pl-40 ">
           <div className="flex flex-col gap-6">
             <h4 className="font-bold text-xl">Business</h4>
