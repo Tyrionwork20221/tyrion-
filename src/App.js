@@ -8,12 +8,12 @@ import ShopNowPage from "./components/ShopNowPage";
 
 function App() {
   return (
-    <div className="w-screen">
+    <div className="w-screen overflow-x-hidden">
       {/* <SignUpPage /> */}
       {/* <SignInPage /> */}
-      <LandingPage />
+      {/* <LandingPage /> */}
       {/* <AboutUsPage /> */}
-      {/* <Rates /> */}
+      <Rates />
       {/* <ShopNowPage /> */}
     </div>
   );

@@ -6,7 +6,7 @@ import icon4 from "../assets/passwordicon.svg";
 
 function signInPage() {
   return (
-    <div className="ml-36 font-['DM Sans'] overscroll-x-none">
+    <div className="ml-36 font-['DM Sans'] overscroll-x-none font-DMSans">
       <img src={logo} alt="logo" className="w-32 mt-16" />
       <div className="flex justify-between">
         <div>

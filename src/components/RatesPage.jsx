@@ -3,7 +3,7 @@ import logo3 from "../assets/logo3.png";
 
 function ratesPage() {
   return (
-    <div>
+    <div className="font-DMSans overflow-x-hidden">
       {/* header */}
       <div className="ml-20 mr-10 flex items-center justify-between mt-12">
         <img src={logo3} alt="" className="w-32 h-14" />

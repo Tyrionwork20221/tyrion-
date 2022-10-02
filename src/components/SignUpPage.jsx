@@ -8,7 +8,7 @@ import icon4 from "../assets/passwordicon.svg";
 
 function signUpPage() {
   return (
-    <div className="ml-36 font-['DM Sans']">
+    <div className="ml-36 font-DMSans">
       <img src={logo} alt="logo" className="w-32 mt-16" />
       <div className="flex justify-between">
         <div>
@@ -84,7 +84,7 @@ function signUpPage() {
           </form>
           <h4 className="text-center text-lg">
             Already have an account?{" "}
-            <span className="text-[#fbc108]">Sign in</span>
+            <span className="text-[#fbc108] cursor-pointer">Sign in</span>
           </h4>
         </div>
         <div>

@@ -4,7 +4,7 @@ import collection from "../assets/Rectangle 2.png";
 
 function shopNowPage() {
   return (
-    <div>
+    <div className="font-DMSans">
       {/* header */}
       <div className="ml-40 mr-10 flex items-center  mt-12 mb-36">
         <img src={logo3} alt="" className="w-32 h-14 mr-16" />

@@ -5,9 +5,9 @@ import tyrion5 from "../assets/Tyrion 5.png";
 
 function aboutUsPage() {
   return (
-    <div>
+    <div className="font-DMSans overflow-x-hidden">
       {/* header */}
-      <div className="ml-20 flex items-center justify-between mt-12">
+      <div className="ml-20 flex items-center justify-between mt-12 mr-10">
         <img src={logo3} alt="" className="w-32 h-14" />
         <div className="flex items-center  font-medium text-base  gap-14">
           <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">

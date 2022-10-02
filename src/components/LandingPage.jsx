@@ -13,16 +13,18 @@ import ellipse from "../assets/Ellipse 3.png";
 import polygon from "../assets/Polygon 1.png";
 import vector1 from "../assets/Vector 1.png";
 import hamburger from "../assets/hamburger.png";
+import insta from "../assets/insta.png";
+import twitter from "../assets/twitter.png";
 
 function landingPage() {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden font-DMSans">
       {/* section 1 */}
       <div className="bg-gradient-to-br from-[#e2cc06]  via-black  to-gray-300 pt-12 md:relative">
         {/* header */}
         <div className="md:mx-90 mx-9 flex items-center justify-between">
-          <img src={logo2} alt="" className="md:w-32 md:h-14" />
-          <div className="md:flex items-center text-white font-medium text-base  gap-14 hidden">
+          <img src={logo2} alt="" className="md:w-32 md:h-14 w-16 h-7" />
+          <div className="md:flex items-center text-white font-medium text-base  gap-14 hidden ">
             <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108] ">
               Home
             </h6>
@@ -52,7 +54,7 @@ function landingPage() {
 
         <div className="md:ml-90 justify-between md:mt-20 mt-6 md:flex ml-9">
           <div>
-            <h1 className="font-bold md:text-7xl text-5xl md:mt-20 mt-6 text-white">
+            <h1 className="font-bold md:text-7xl text-5xl md:mt-20 mt-6 text-white ">
               Swap Your <br />
               Gift Cards & <br />
               Digital Assets{" "}
@@ -61,10 +63,10 @@ function landingPage() {
               For Naira Securely In Lesser Time
             </h4>
             <div className="flex gap-4 mb-10">
-              <button className="bg-[#FBC108] md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  text-white rounded-lg font-medium md:text-lg cursor-pointer hover:bg-[#FFCC00]">
+              <button className="bg-[#FBC108] md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  text-white rounded-lg nd:font-medium md:text-lg cursor-pointer hover:bg-[#FFCC00]">
                 Start Trading
               </button>
-              <button className="border-solid border-2 border-red-500  md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  text-white rounded-lg font-medium md:text-lg cursor-pointer hover:bg-[#fbc108] hover:text-white hover:border-none">
+              <button className="border-solid border-2 border-red-500  md:w-44 w-28 md:h-16 h-9 px-2.5 py-2 text-sm  text-white rounded-lg md:font-medium md:text-lg cursor-pointer hover:bg-[#fbc108] hover:text-white hover:border-none">
                 Check Rates
               </button>
             </div>
@@ -135,7 +137,7 @@ function landingPage() {
         <br />
         <span className="text-[#FBC108]">currency</span>
       </h1>
-      <p className="text-base mt-4 md:mt-9 text-[#00000066] text-center md:text-3xl mx-8 md:mx-auto">
+      <p className="text-base mt-4 md:mt-9 text-center md:text-3xl mx-8 md:mx-auto">
         We are 3 years experienced Nigerian registered and established
         <br /> exchange that provides local currency for an equal value of gift
         cards
@@ -324,7 +326,11 @@ function landingPage() {
             <h4 className="font-bold text-xl">Contact</h4>
             <h6 className="font-base">+234 905 678 4456</h6>
             <h6 className="font-base">hello@tyrionexchange</h6>
-            <h6 className="font-base">Tyrionexchange</h6>
+            <div className="flex gap-2 items-center">
+              <img src={insta} alt="" className="w-4 h-4" />
+              <img src={twitter} alt="" className="w-5 h-4" />
+              <h6 className="font-base">Tyrionexchange</h6>
+            </div>
           </div>
         </div>
         <p className="mt-20 self-center">

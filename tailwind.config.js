@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        DMSans: ["DM Sans", "sans-serif"],
+      },
       spacing: {
         90: "90px",
         455: "455px",
