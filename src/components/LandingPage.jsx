@@ -21,33 +21,7 @@ function landingPage() {
     <div className="overflow-x-hidden font-DMSans">
       {/* section 1 */}
       <div className="bg-gradient-to-br from-[#e2cc06]  via-black  to-gray-300 pt-12 md:relative">
-        {/* header */}
-        <div className="md:mx-90 mx-9 flex items-center justify-between">
-          <img src={logo2} alt="" className="md:w-32 md:h-14 w-16 h-7" />
-          <div className="md:flex items-center text-white font-medium text-base  gap-14 hidden ">
-            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108] ">
-              Home
-            </h6>
-            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              About us
-            </h6>
-            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Rates
-            </h6>
-            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              FAQs
-            </h6>
-            <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Contact
-            </h6>
-          </div>
-          <button className="bg-[#FBC108]  w-40 h-16 text-white rounded-lg font-medium text-lg cursor-pointer hover:bg-[#FFCC00] hidden md:block">
-            Dashboard
-          </button>
-          {/* hamburger for mobile view */}
-          <img src={hamburger} alt="" className="md:hidden w-5 h-3" />
-          {/* end */}
-        </div>
+      
         {/* header ends */}
 
         {/* hero */}

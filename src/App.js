@@ -9,11 +9,11 @@ import ShopNowPage from "./components/ShopNowPage";
 function App() {
   return (
     <div className="w-screen overflow-x-hidden">
-      {/* <SignUpPage /> */}
+      <SignUpPage />
       {/* <SignInPage /> */}
       {/* <LandingPage /> */}
       {/* <AboutUsPage /> */}
-      <Rates />
+      {/* <Rates /> */}
       {/* <ShopNowPage /> */}
     </div>
   );
