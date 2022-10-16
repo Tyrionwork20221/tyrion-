@@ -1,5 +1,4 @@
 import React from "react";
-import logo2 from "../assets/logo2.png";
 import tyrion3 from "../assets/Tyrion 3a.png";
 import tyrion4 from "../assets/Tyrion 4.png";
 import coins1 from "../assets/Coins 1.png";
@@ -12,26 +11,25 @@ import image2 from "../assets/Group 2.png";
 import ellipse from "../assets/Ellipse 3.png";
 import polygon from "../assets/Polygon 1.png";
 import vector1 from "../assets/Vector 1.png";
-import hamburger from "../assets/hamburger.png";
 import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
+import Navigation from "./nav/index";
 
-function landingPage() {
+function LandingPage(props) {
   return (
-    <div className="overflow-x-hidden font-DMSans">
+    <div className=" font-DMSans">
       {/* section 1 */}
       <div className="bg-gradient-to-br from-[#e2cc06]  via-black  to-gray-300 pt-12 md:relative">
-      
+        {/* header */}
+        <Navigation />
         {/* header ends */}
 
         {/* hero */}
-
-        <div className="md:ml-90 justify-between md:mt-20 mt-6 md:flex ml-9">
+        <div className="md:ml-90 md:mt-20 mt-6 md:flex ml-9">
           <div>
-            <h1 className="font-bold md:text-7xl text-5xl md:mt-20 mt-6 text-white ">
-              Swap Your <br />
-              Gift Cards & <br />
-              Digital Assets{" "}
+            <h1 className="font-bold md:text-6xl text-5xl md:mt-20 mt-6 text-white ">
+              Shop for E-commerce products & Swap Your Gift Cards & Digital
+              Assets
             </h1>
             <h4 className="text-white mt-2 font-medium text-sm md:text-2xl md:mb-90 mb-5">
               For Naira Securely In Lesser Time
@@ -68,7 +66,6 @@ function landingPage() {
           className="md:absolute top-410 left-56 z-0 hidden md:block"
         />
       </div>
-
       {/* hero section */}
 
       {/* section 2 */}
@@ -315,4 +312,4 @@ function landingPage() {
   );
 }
 
-export default landingPage;
+export default LandingPage;
