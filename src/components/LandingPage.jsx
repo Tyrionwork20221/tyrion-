@@ -11,19 +11,16 @@ import image2 from "../assets/Group 2.png";
 import ellipse from "../assets/Ellipse 3.png";
 import polygon from "../assets/Polygon 1.png";
 import vector1 from "../assets/Vector 1.png";
-import insta from "../assets/insta.png";
-import twitter from "../assets/twitter.png";
-import Navigation from "./nav/index";
+import Navigation from "./Navigation";
+import { Footer } from "./Footer";
 
 function LandingPage(props) {
   return (
     <div className=" font-DMSans">
       {/* section 1 */}
       <div className="bg-gradient-to-br from-[#e2cc06]  via-black  to-gray-300 pt-12 md:relative">
-        {/* header */}
+        {/* navigation */}
         <Navigation />
-        {/* header ends */}
-
         {/* hero */}
         <div className="md:ml-90 md:mt-20 mt-6 md:flex ml-9">
           <div>
@@ -239,75 +236,8 @@ function LandingPage(props) {
           </button>
         </form>
       </div>
-
+      <Footer />
       {/* footer */}
-
-      <footer className="hidden md:flex bg-black text-white pt-32 pb-12 flex flex-col">
-        <div className="flex gap-32 pl-40 ">
-          <div className="flex flex-col gap-6">
-            <h4 className="font-bold text-xl">Business</h4>
-            <h6
-              className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]
-              "
-            >
-              About us
-            </h6>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Exchange
-            </h6>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108] ">
-              Rates
-            </h6>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            <h4 className="font-bold text-xl">Legal</h4>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Term of use
-            </h6>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Privacy policy
-            </h6>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            <h4 className="font-bold text-xl">Product</h4>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Exchange
-            </h6>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Cryptocurrency
-            </h6>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            <h4 className="font-bold text-xl">Support</h4>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Live chat
-            </h6>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Help center
-            </h6>
-            <h6 className="font-base cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-              Give feedback
-            </h6>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            <h4 className="font-bold text-xl">Contact</h4>
-            <h6 className="font-base">+234 905 678 4456</h6>
-            <h6 className="font-base">hello@tyrionexchange</h6>
-            <div className="flex gap-2 items-center">
-              <img src={insta} alt="" className="w-4 h-4" />
-              <img src={twitter} alt="" className="w-5 h-4" />
-              <h6 className="font-base">Tyrionexchange</h6>
-            </div>
-          </div>
-        </div>
-        <p className="mt-20 self-center">
-          © 2021 — Tyrionexchange - All Rights Reserved
-        </p>
-      </footer>
     </div>
   );
 }
