@@ -3,8 +3,12 @@ import SignUpPage from "./components/SignUpPage";
 import SignInPage from "./components/SignInPage";
 import AboutUsPage from "./components/AboutUsPage";
 import Rates from "./components/RatesPage";
-import ShopNowPage from "./components/ShopNowPage";
+import Ecommerce from "./components/Ecommerce";
 import { Dashboard } from "./components/layout/Dashboard";
+import Faqs from "./components/Faqs";
+import Authentication from "./components/layout/Authentication";
+
+// import Auth from "./components/layout/Authentication";
 
 const RoutesObjects = [
   {
@@ -12,16 +16,26 @@ const RoutesObjects = [
     path: "/",
     element: <LandingPage />,
   },
+
   {
     id: 2,
-    path: "sign-up",
-    element: <SignUpPage />,
+    path: "/sign-in",
+    element: (
+      <Authentication>
+        <SignInPage />
+      </Authentication>
+    ),
   },
   {
     id: 3,
-    path: "sign-in",
-    element: <SignInPage />,
+    path: "/sign-up",
+    element: (
+      <Authentication>
+        <SignUpPage />
+      </Authentication>
+    ),
   },
+
   {
     id: 4,
     path: "/about",
@@ -43,8 +57,22 @@ const RoutesObjects = [
   {
     id: 6,
     path: "/shop",
-    element: <ShopNowPage />,
+    element: <Ecommerce />,
   },
+  {
+    id: 7,
+    path: "/faqs",
+    element: (
+      <Dashboard>
+        <Faqs />
+      </Dashboard>
+    ),
+  },
+  // {
+  //   id: 8,
+  //   path: "/authentication",
+  //   element: <Authentication />,
+  // },
 ];
 
 export default RoutesObjects;

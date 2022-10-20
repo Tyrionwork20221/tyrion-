@@ -1,38 +1,16 @@
 import React from "react";
 import logo3 from "../assets/logo3.png";
+import Navigation from "./Navigation";
+import { useNavigate } from "react-router-dom";
 
-function ratesPage() {
+function RatesPage() {
+  const navigate = useNavigate();
+
+  // const location = useLocation();
   return (
-    <div className="font-DMSans overflow-x-hidden">
+    <div className="font-DMSans overflow-x-hidden pt-12">
       {/* header */}
-      <div className="ml-20 mr-10 flex items-center justify-between mt-12">
-        <img src={logo3} alt="" className="w-32 h-14" />
-        <div className="flex items-center  font-medium text-base  gap-14">
-          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-            Home
-          </h6>
-          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-            About us
-          </h6>
-          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-            Rates
-          </h6>
-          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-            FAQs
-          </h6>
-          <h6 className="cursor-pointer hover:text-[#fbc108] active:text-[#fbc108]">
-            Contact
-          </h6>
-        </div>
-        <div>
-          <button className="border-solid border-2 border-[#FBC108] mr-7  w-40 h-16 rounded-lg font-medium text-lg cursor-pointer hover:bg-[#fbc108] hover:text-white ">
-            Sign in
-          </button>
-          <button className="bg-[#FBC108]  w-52 h-16 text-white rounded-lg font-medium text-lg px-4 cursor-pointer hover:bg-[#FFCC00]">
-            Create an account
-          </button>
-        </div>
-      </div>
+      <Navigation />
 
       {/* body */}
       <div className="flex flex-col items-center">
@@ -61,12 +39,27 @@ function ratesPage() {
         </div>
         {/* conversion */}
         <h1 className="font-bold text-6xl">= N 23,500</h1>
-        <h4 className="font-medium text-2xl  text-[#00000069]">
+        <h4 className="font-medium text-2xl mb-16 text-[#00000069]">
           based on current rate
         </h4>
+        <h1 className="font-bold text-5xl mb-8">To get started</h1>
+        <div className="flex md:gap-12 gap-6 md:mb-40 mb-20">
+          <button
+            className="md:w-280 w-52  rounded-lg md:h-14 h-8 bg-[#FBC108] text-white font-medium md:text-xl hover:bg-[#FFCC00] active:bg-blue-200 "
+            onClick={() => navigate("/sign-up")}
+          >
+            Create an account
+          </button>
+          <button
+            className="border border-yellow-500 border-2px md:w-52 w-24 h-8 md:h-14 rounded-lg md:text-xl font-medium  hover:bg-[#fbc108] hover:text-white hover:border-none active:bg-blue-200"
+            onClick={() => navigate("/sign-in")}
+          >
+            Sign in
+          </button>
+        </div>
       </div>
     </div>
   );
 }
 
-export default ratesPage;
+export default RatesPage;
